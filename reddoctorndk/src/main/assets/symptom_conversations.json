@@ -1,0 +1,32 @@
+{
+  "symptomConversations": {
+    "Headache": {
+      "symptom_name": "Headache",
+      "symptom_description": "A headache is a common symptom that can have various causes.",
+      "doctor_prompts": [
+        "Hello, I understand you're experiencing a headache. Can you describe the pain's intensity and location?",
+        "I'm here to help with your headache. How long have you had this headache, and is there anything that triggers it?",
+        "I'm sorry to hear about your headache. Are there any other symptoms accompanying the pain, such as nausea or sensitivity to light?"
+      ],
+      "patient_responses": [
+        "I have a mild headache on my forehead.",
+        "I've had this headache for a few hours, and it's usually triggered by stress.",
+        "Yes, I've been feeling a bit nauseous and sensitive to light."
+      ]
+    },
+    "Fever": {
+      "symptom_name": "Fever",
+      "symptom_description": "Fever can indicate an underlying infection or illness.",
+      "doctor_prompts": [
+        "Hello, it seems you have a fever. Can you tell me your current body temperature and any other symptoms you're experiencing?",
+        "I'm here to assist with your fever. How long have you had the fever, and have you taken any fever-reducing medication?",
+        "I see. Fever can be caused by various factors. Have you been in contact with someone who's been sick recently?"
+      ],
+      "patient_responses": [
+        "My temperature is 101°F, and I have body aches.",
+        "I've had a fever for two days, and I took some ibuprofen for it.",
+        "I was in close contact with a colleague who had a cold."
+      ]
+    }
+  }
+}

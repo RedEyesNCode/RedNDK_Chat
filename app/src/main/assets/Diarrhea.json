@@ -1,0 +1,36 @@
+{
+  "symptom": "Diarrhea",
+  "symptom_description": "Diarrhea is the passage of loose, watery stools and can be caused by infections, food poisoning, or gastrointestinal disorders.",
+  "conversations": [
+    {
+      "role": "doctor",
+      "prompt": "How frequently are you experiencing diarrhea?",
+      "response": "I've had diarrhea multiple times today."
+    },
+    {
+      "role": "patient",
+      "prompt": "My coworker had it too.",
+      "response": "It seems like a few of my colleagues also had similar symptoms."
+    },
+    {
+      "role": "doctor",
+      "prompt": "Have you tried any over-the-counter remedies?",
+      "response": "I haven't tried anything yet."
+    },
+    {
+      "role": "patient",
+      "prompt": "What should I do to relieve the symptoms?",
+      "response": "I'm not sure how to manage it."
+    },
+    {
+      "role": "doctor",
+      "prompt": "You should stay hydrated and consider seeing a healthcare professional if it persists.",
+      "response": "I'll make sure to drink plenty of fluids."
+    },
+    {
+      "role": "patient",
+      "prompt": "Thanks for the advice, I'll keep an eye on it.",
+      "response": "I appreciate your help. I'll monitor the situation."
+    }
+  ]
+}
