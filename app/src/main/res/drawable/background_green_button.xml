@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the button -->
+    <solid android:color="@color/blue4_dashboard"/> <!-- Change to your desired background color -->
+
+    <!-- Border color and width -->
+    <stroke
+        android:color="@color/blue4_dashboard"
+    android:width="@dimen/_2sdp"/>
+
+    <corners android:radius="@dimen/_12sdp"/>
+
+    <padding
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp" />
+</shape>

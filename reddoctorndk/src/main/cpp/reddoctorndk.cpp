@@ -14,6 +14,22 @@ using nlohmann::json; // Use the JSON namespace
 #include <android/asset_manager_jni.h>
 #include "json.hpp" // Include the nlohmann's JSON library header
 using nlohmann::json; // Use the JSON namespace
+#include <jni.h>
+#include <string>
+#include <android/asset_manager.h>
+#include <android/asset_manager_jni.h>
+#include "json.hpp" // Include the nlohmann's JSON library header
+using nlohmann::json; // Use the JSON namespace
+
+#include <jni.h>
+#include <string>
+#include <android/asset_manager.h>
+#include <android/asset_manager_jni.h>
+#include "json.hpp" // Include the nlohmann's JSON library header
+using nlohmann::json; // Use the JSON namespace
+
+// Define a global index variable to keep track of the current prompt.
+int currentPromptIndex = 0;
 
 extern "C" JNIEXPORT jstring JNICALL Java_com_redeyesncode_reddoctorndk_NativeLib_stringFromJNI(
         JNIEnv* env, jobject thiz, jobject assetManager, jstring symptomKeyword) {
@@ -27,7 +43,7 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_redeyesncode_reddoctorndk_NativeLi
     AAsset* asset = AAssetManager_open(aAssetManager, jsonFilename.c_str(), AASSET_MODE_BUFFER);
 
     if (asset == nullptr) {
-        return env->NewStringUTF("Symptom data not found.");
+        return nullptr; // Return null to indicate that the symptom data is not found.
     }
 
     // Read the JSON content.
@@ -42,22 +58,34 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_redeyesncode_reddoctorndk_NativeLi
 
     json symptomData = json::parse(jsonData);
 
-    // Access and use the symptom data as needed.
-    std::string symptomName = symptomData["symptom"];
-    std::string symptomDescription = symptomData["symptom_description"];
+    // Check if the provided role is "doctor."
+    if (std::string("doctor") == "doctor") {
+        // Retrieve the specific conversation entry based on the current index.
+        json doctorConversation = symptomData["doctor_conversations"][currentPromptIndex];
 
-    // Extract and process conversations
-    json conversations = symptomData["conversations"];
-    for (const auto& conversation : conversations) {
-        std::string role = conversation["role"];
-        std::string prompt = conversation["prompt"];
-        std::string response = conversation["response"];
-        // Process the conversation data as needed.
+        // Check if the conversation entry has prompts and responses.
+        if (doctorConversation.find("prompt") != doctorConversation.end() &&
+            doctorConversation.find("patient_responses") != doctorConversation.end()) {
+            // Get the prompt and patient responses.
+            std::string prompt = doctorConversation["prompt"];
+            json patientResponses = doctorConversation["patient_responses"];
+
+            // Increment the current index for the next prompt.
+            currentPromptIndex = (currentPromptIndex + 1) % symptomData["doctor_conversations"].size();
+
+            // Return the prompt and responses as a JSON object.
+            json response;
+            response["prompt"] = prompt;
+            response["patient_responses"] = patientResponses;
+            return env->NewStringUTF(response.dump().c_str());
+        }
     }
 
-    // Return a response, such as symptom description or a specific conversation.
-    return env->NewStringUTF(symptomDescription.c_str());
+    // If the role is not "doctor" or data is not available, return null.
+    return nullptr;
 }
+
+
 
 
 
