@@ -14,7 +14,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/lb_italic"
         android:textAllCaps="false"
-        android:text="It seems like a few of my colleagues also had similar symptoms."
+        android:text="Loading.."
         android:textSize="@dimen/_12sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

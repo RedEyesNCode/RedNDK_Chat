@@ -22,6 +22,124 @@
         "I'll make sure to drink plenty of fluids.",
         "I'll consult a doctor if it doesn't improve."
       ]
+    },
+    {
+      "prompt": "Are you experiencing any abdominal cramps or bloating along with diarrhea?",
+      "patient_responses": [
+        "Yes, I've been having cramps and bloating.",
+        "No, I don't have any abdominal discomfort."
+      ]
+    },
+    {
+      "prompt": " Do you have a history of gastrointestinal disorders?",
+      "patient_responses": [
+        "I have irritable bowel syndrome (IBS).",
+        "No, I don't have any known gastrointestinal issues."
+      ]
+    },
+    {
+      "prompt": "Have you made any significant changes to your diet recently?",
+      "patient_responses": [
+        "I started a new diet last week.",
+        "My diet has remained the same."
+      ]
+    },
+    {
+      "prompt": "Have you been experiencing any vomiting or nausea?",
+      "patient_responses": [
+        "Yes, I've been vomiting as well.",
+        "No, I haven't experienced any nausea or vomiting."
+      ]
+    },
+    {
+      "prompt": "Have you recently had any food from a questionable source, such as street food or undercooked meat?",
+      "patient_responses": [
+        "I ate street food a few days ago.",
+        "I've been eating home-cooked meals."
+      ]
+    },
+    {
+      "prompt": "Are you currently taking any other medications or supplements?",
+      "patient_responses": [
+        "I'm taking a daily multivitamin and an allergy medication.",
+        "I'm not on any other medications or supplements."
+      ]
+    },
+    {
+      "prompt": "Have you had any recent travel to regions known for gastrointestinal infections?",
+      "patient_responses": [
+        "I traveled to a tropical country last month.",
+        "No, I haven't traveled to such regions recently."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of food allergies?",
+      "patient_responses": [
+        "I'm allergic to shellfish and had some a few days ago.",
+        "I don't have any food allergies."
+      ]
+    },
+    {
+      "prompt": "Are you experiencing any fatigue or weakness along with diarrhea?",
+      "patient_responses": [
+        "Yes, I've been feeling extremely fatigued.",
+        "No, I don't feel particularly weak."
+      ]
+    },
+    {
+      "prompt": "Have you been in contact with anyone who has recently traveled and had similar symptoms?",
+      "patient_responses": [
+        "My coworker just returned from a trip and also has diarrhea.",
+        "No, I haven't been in contact with anyone like that."
+      ]
+    },
+    {
+      "prompt": "Have you noticed any changes in the color or odor of your stool?",
+      "patient_responses": [
+        "Yes, it's been very foul-smelling and dark in color.",
+        "No, my stool looks normal."
+      ]
+    },
+    {
+      "prompt": "Are you experiencing any fever or chills?",
+      "patient_responses": [
+        "Yes, I have a fever and chills.",
+        "No, I don't have a fever or chills."
+      ]
+    },
+    {
+      "prompt": "Have you recently consumed any raw or undercooked eggs or dairy products?",
+      "patient_responses": [
+        "I had a raw egg in a sauce a few days ago.",
+        "I haven't consumed any raw or undercooked products."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of lactose intolerance?",
+      "patient_responses": [
+        "Yes, I'm lactose intolerant and had dairy last night.",
+        "No, I'm not lactose intolerant."
+      ]
+    },
+    {
+      "prompt": "Have you traveled to areas with poor sanitation or water quality recently?",
+      "patient_responses": [
+        "I visited a rural area with questionable water quality last week.",
+        "No, I haven't traveled to such areas recently."
+      ]
+    },
+    {
+      "prompt": "Have you experienced any recent stress or emotional changes?",
+      "patient_responses": [
+        "I've been under a lot of stress lately.",
+        "No, my stress levels have been normal."
+      ]
+    },
+    {
+      "prompt": "Thank you for your time !",
+      "patient_responses": [
+        "Start Again ?!"
+      ]
     }
   ]
 }

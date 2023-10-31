@@ -1,28 +1,5 @@
 #include <jni.h>
 #include <string>
-#include <sstream>
-#include <android/asset_manager.h>
-#include <android/asset_manager_jni.h>
-#include "json.hpp" // Include the JSON library header
-using nlohmann::json; // Use the JSON namespace
-
-
-
-#include <jni.h>
-#include <string>
-#include <android/asset_manager.h>
-#include <android/asset_manager_jni.h>
-#include "json.hpp" // Include the nlohmann's JSON library header
-using nlohmann::json; // Use the JSON namespace
-#include <jni.h>
-#include <string>
-#include <android/asset_manager.h>
-#include <android/asset_manager_jni.h>
-#include "json.hpp" // Include the nlohmann's JSON library header
-using nlohmann::json; // Use the JSON namespace
-
-#include <jni.h>
-#include <string>
 #include <android/asset_manager.h>
 #include <android/asset_manager_jni.h>
 #include "json.hpp" // Include the nlohmann's JSON library header
@@ -60,32 +37,40 @@ extern "C" JNIEXPORT jstring JNICALL Java_com_redeyesncode_reddoctorndk_NativeLi
 
     // Check if the provided role is "doctor."
     if (std::string("doctor") == "doctor") {
-        // Retrieve the specific conversation entry based on the current index.
-        json doctorConversation = symptomData["doctor_conversations"][currentPromptIndex];
+        int numConversations = symptomData["doctor_conversations"].size();
 
-        // Check if the conversation entry has prompts and responses.
-        if (doctorConversation.find("prompt") != doctorConversation.end() &&
-            doctorConversation.find("patient_responses") != doctorConversation.end()) {
-            // Get the prompt and patient responses.
-            std::string prompt = doctorConversation["prompt"];
-            json patientResponses = doctorConversation["patient_responses"];
+        if (numConversations > 0) {
+            // If the current prompt index is within bounds.
+            if (currentPromptIndex < numConversations) {
+                // Retrieve the specific conversation entry based on the current index.
+                json doctorConversation = symptomData["doctor_conversations"][currentPromptIndex];
 
-            // Increment the current index for the next prompt.
-            currentPromptIndex = (currentPromptIndex + 1) % symptomData["doctor_conversations"].size();
+                // Check if the conversation entry has prompts and responses.
+                if (doctorConversation.find("prompt") != doctorConversation.end() &&
+                    doctorConversation.find("patient_responses") != doctorConversation.end()) {
+                    // Get the prompt and patient responses.
+                    std::string prompt = doctorConversation["prompt"];
+                    json patientResponses = doctorConversation["patient_responses"];
 
-            // Return the prompt and responses as a JSON object.
-            json response;
-            response["prompt"] = prompt;
-            response["patient_responses"] = patientResponses;
-            return env->NewStringUTF(response.dump().c_str());
+                    // Increment the current index for the next prompt.
+                    currentPromptIndex = (currentPromptIndex + 1) % numConversations;
+
+                    // Return the prompt and responses as a JSON object.
+                    json response;
+                    response["prompt"] = prompt;
+                    response["patient_responses"] = patientResponses;
+                    return env->NewStringUTF(response.dump().c_str());
+                }
+            }else if (currentPromptIndex == numConversations) {
+                json endResponse;
+                endResponse["prompt"] = "ENDED";
+                endResponse["patient_responses"] = json::array();
+                currentPromptIndex++; // Increment to prevent repeating the "ENDED" response.
+                return env->NewStringUTF(endResponse.dump().c_str());
+            }
         }
     }
 
     // If the role is not "doctor" or data is not available, return null.
     return nullptr;
 }
-
-
-
-
-
