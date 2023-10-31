@@ -136,9 +136,9 @@
       ]
     },
     {
-      "prompt": "Thank you for your time !",
+      "prompt": "ENDED",
       "patient_responses": [
-        "Start Again ?!"
+        "Please Restart the App !"
       ]
     }
   ]

@@ -1,0 +1,92 @@
+{
+  "symptom": "Dry Mouth",
+  "symptom_description": "Dry mouth, also known as xerostomia, is the feeling of an unusually dry or sticky mouth. It can be caused by factors such as dehydration, medications, or underlying health conditions.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing dry mouth?",
+      "patient_responses": [
+        "I've had dry mouth for the past few days.",
+        "It's been ongoing for a couple of weeks now.",
+        "This has been a constant issue for several months."
+      ]
+    },
+    {
+      "prompt": "Have you tried any remedies or changes in your routine to alleviate the dry mouth?",
+      "patient_responses": [
+        "I've been drinking more water and using sugar-free gum.",
+        "I haven't tried any remedies yet.",
+        "I've tried over-the-counter saliva substitutes."
+      ]
+    },
+    {
+      "prompt": "Staying hydrated is important to manage dry mouth. If it persists, consider consulting a healthcare professional.",
+      "patient_responses": [
+        "I'll continue to drink water and follow your advice.",
+        "I appreciate your guidance, and I'll monitor the situation.",
+        "I'm not sure if I want to see a doctor about it."
+      ]
+    },
+    {
+      "prompt": "Do you experience any other symptoms in addition to dry mouth, such as a sore throat, altered taste, or difficulty swallowing?",
+      "patient_responses": [
+        "I have a persistent sore throat and an altered sense of taste.",
+        "No, I don't have any other symptoms with it.",
+        "I've had some difficulty swallowing."
+      ]
+    },
+    {
+      "prompt": "Have you recently started any new medications or changed your dosage of existing medications?",
+      "patient_responses": [
+        "I started a new medication for hypertension last month.",
+        "I'm not currently taking any new medications or changing dosages.",
+        "I adjusted the dose of my antidepressant."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of medical conditions that may contribute to dry mouth, such as Sjögren's syndrome or diabetes?",
+      "patient_responses": [
+        "I have Sjögren's syndrome and diabetes.",
+        "I don't have a history of these conditions.",
+        "I have a family history of diabetes."
+      ]
+    },
+    {
+      "prompt": "Have you been exposed to dry or arid environments, or do you breathe through your mouth while sleeping?",
+      "patient_responses": [
+        "I live in a dry climate, and it's been very dry lately.",
+        "I don't live in a particularly dry area, and I'm not sure about my sleeping habits.",
+        "I do breathe through my mouth when sleeping."
+      ]
+    },
+    {
+      "prompt": "Is your dry mouth more prominent at a particular time of day, or is it constant?",
+      "patient_responses": [
+        "It's more prominent in the morning when I wake up.",
+        "My dry mouth is fairly constant throughout the day.",
+        "It gets worse in the evening and at night."
+      ]
+    },
+    {
+      "prompt": "Have you tried any lifestyle changes, such as avoiding caffeine or alcohol, to alleviate your dry mouth?",
+      "patient_responses": [
+        "I've cut down on caffeine and alcohol consumption.",
+        "I haven't made any specific lifestyle changes yet.",
+        "I don't consume caffeine or alcohol regularly."
+      ]
+    },
+    {
+      "prompt": "Do you have any known allergies or sensitivities that may be contributing to your symptoms?",
+      "patient_responses": [
+        "I have allergies to certain food additives that can cause dry mouth.",
+        "I'm not aware of any allergies or sensitivities.",
+        "I have seasonal allergies."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Redchatndk" parent="Base.Theme.Redchatndk" />
+    <style name="EditTextOutLineStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/blue4_dashboard</item>
+        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+        <item name="colorOnSurface">@color/blue4_dashboard</item>
+        <item name="colorPrimary">@color/blue4_dashboard</item>
+    </style>
 </resources>

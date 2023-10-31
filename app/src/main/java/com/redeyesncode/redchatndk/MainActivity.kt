@@ -9,6 +9,7 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -49,11 +50,7 @@ class MainActivity : AppCompatActivity(),ChatAdapter.onResponsePatient {
         val jsonString = nativeLib.stringFromJNI(assetManager,binding.edtKeyword.text.toString())
         val jsonObject = Gson().fromJson(jsonString,SymptomData.DoctorConversations::class.java) as SymptomData.DoctorConversations
         var listResponse = arrayListOf<String>()
-        if(jsonObject.prompt.equals("Thank you for your time !")){
-            binding.btnStartChat.visibility=View.VISIBLE
-        }else{
-            binding.btnStartChat.visibility = View.INVISIBLE
-        }
+
         updateTextViewWithAnimation(binding.tvDoctorPrompt,jsonObject.prompt.toString())
         for (chat in jsonObject.patientResponses){
             listResponse.add(chat)
@@ -65,6 +62,11 @@ class MainActivity : AppCompatActivity(),ChatAdapter.onResponsePatient {
 //        setRecyclerViewWithAnimation(binding.recvUserResponses,ChatAdapter(this@MainActivity,listResponse,this),LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false))
     }
     private fun initClicks() {
+
+        binding.edtKeyword.setOnClickListener {
+            showStatusDialog()
+        }
+
         binding.btnStartChat.setOnClickListener {
             if(binding.edtKeyword.text.toString().isEmpty()){
                 Toast.makeText(this@MainActivity,"Please enter something",Toast.LENGTH_LONG).show()
@@ -117,4 +119,29 @@ class MainActivity : AppCompatActivity(),ChatAdapter.onResponsePatient {
         // Start the fade-in animation
         fadeInAnimator.start()
     }
+    private fun showStatusDialog(){
+        val options = arrayOf("Fever","DizzyX","ChronicPain","Chills","Cold","HeadAche","Diarrhea","DryMouth","ToothPain","BackPain")
+
+        // Create a dialog with a list of items
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Select Symptom")
+            .setItems(options) { dialog, which ->
+                // Handle the selected item here
+                val selectedOption = options[which]
+                binding.edtKeyword.setText(selectedOption)
+                // You can perform an action based on the selected option
+            }
+            .setNegativeButton("Cancel") { dialog, which ->
+                // Handle the cancel action or dismiss the dialog
+            }
+
+        // Create and show the dialog
+        val dialog = builder.create()
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.setCancelable(false)
+        dialog.show()
+
+
+    }
+
 }

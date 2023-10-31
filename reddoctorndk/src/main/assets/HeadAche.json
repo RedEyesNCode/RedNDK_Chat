@@ -1,0 +1,82 @@
+{
+  "symptom": "Headache",
+  "symptom_description": "A headache is a pain or discomfort in the head or neck region and can be caused by various factors, including tension, migraine, or underlying health conditions.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing headaches?",
+      "patient_responses": [
+        "I've had a headache for the past two days.",
+        "It's been a recurring issue for several weeks."
+      ]
+    },
+    {
+      "prompt": "Have you taken any over-the-counter pain relief medication for your headaches?",
+      "patient_responses": [
+        "Yes, I've taken ibuprofen to relieve the pain.",
+        "No, I haven't taken any medication for it yet."
+      ]
+    },
+    {
+      "prompt": "Make sure to rest, stay hydrated, and consider seeing a healthcare professional if your headaches persist or worsen.",
+      "patient_responses": [
+        "I'll take it easy and drink more water.",
+        "I'll monitor the situation and consult a doctor if needed."
+      ]
+    },
+    {
+      "prompt": "Is your headache accompanied by any other symptoms, such as nausea, sensitivity to light, or blurred vision?",
+      "patient_responses": [
+        "Yes, I've had nausea and sensitivity to light along with the headache.",
+        "No, I don't have any of those additional symptoms."
+      ]
+    },
+    {
+      "prompt": "Have you experienced any recent stress or changes in your daily routine?",
+      "patient_responses": [
+        "I've been under a lot of stress lately due to work.",
+        "No, my routine has been fairly consistent."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of migraines or any other chronic headaches?",
+      "patient_responses": [
+        "I have a history of migraines.",
+        "No, I don't have a history of chronic headaches."
+      ]
+    },
+    {
+      "prompt": "Have you been getting enough sleep, or have you had any sleep disturbances?",
+      "patient_responses": [
+        "I've had trouble sleeping and haven't been getting enough rest.",
+        "My sleep has been fairly normal, and I'm well-rested."
+      ]
+    },
+    {
+      "prompt": "Are you currently taking any prescription medications or supplements?",
+      "patient_responses": [
+        "I'm on a prescription medication for hypertension.",
+        "I'm not currently taking any medications or supplements."
+      ]
+    },
+    {
+      "prompt": "Is there any specific trigger or pattern to your headaches, such as certain foods or activities?",
+      "patient_responses": [
+        "I've noticed that chocolate triggers my headaches.",
+        "I haven't identified any specific triggers."
+      ]
+    },
+    {
+      "prompt": "Is your headache throbbing or constant in nature?",
+      "patient_responses": [
+        "It's a throbbing headache.",
+        "It's a constant, dull pain."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

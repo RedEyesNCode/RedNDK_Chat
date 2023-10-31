@@ -1,0 +1,85 @@
+{
+  "symptom": "Dizzy",
+  "symptom_description": "Feeling dizzy refers to a sensation of lightheadedness, unsteadiness, or vertigo. It can have various causes, including inner ear issues, low blood pressure, or dehydration.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been feeling dizzy?",
+      "patient_responses": [
+        "I've been feeling dizzy for the past two hours.",
+        "This dizziness has been ongoing for a few days now.",
+        "It's been happening for over a week."
+      ]
+    },
+    {
+      "prompt": "Have you taken any medication or tried any home remedies to alleviate the dizziness?",
+      "patient_responses": [
+        "I haven't tried any remedies yet.",
+        "I took some over-the-counter motion sickness medication, but it didn't help much.",
+        "I tried resting and drinking more water."
+      ]
+    },
+    {
+      "prompt": "It's important to sit or lie down if you feel dizzy, and you should consult a healthcare professional if it persists.",
+      "patient_responses": [
+        "I'll sit down when it happens, and I'll see a doctor if it continues.",
+        "I'll follow your advice and take it easy."
+      ]
+    },
+    {
+      "prompt": "Are there any specific triggers for your dizziness, such as sudden head movements or changes in position?",
+      "patient_responses": [
+        "It seems to happen when I stand up quickly.",
+        "I don't notice any particular triggers.",
+        "I experience dizziness when I turn my head quickly."
+      ]
+    },
+    {
+      "prompt": "Have you experienced any other symptoms alongside dizziness, like nausea, vomiting, or ringing in the ears?",
+      "patient_responses": [
+        "I've had nausea and ringing in the ears along with dizziness.",
+        "No, I don't have any other symptoms."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of ear problems or inner ear disorders?",
+      "patient_responses": [
+        "I have a history of Meniere's disease.",
+        "I don't have a history of ear issues."
+      ]
+    },
+    {
+      "prompt": "Have you been exposed to loud noises or music without hearing protection recently?",
+      "patient_responses": [
+        "I attended a loud concert last night without earplugs.",
+        "No, I haven't been exposed to loud noises recently."
+      ]
+    },
+    {
+      "prompt": "Have you had any recent respiratory infections or sinus congestion?",
+      "patient_responses": [
+        "I had a cold a couple of weeks ago, but it cleared up.",
+        "I haven't had any recent respiratory issues."
+      ]
+    },
+    {
+      "prompt": "Is the dizziness worse at a particular time of day, or is it constant?",
+      "patient_responses": [
+        "It's usually worse in the morning, right after waking up.",
+        "My dizziness occurs at various times throughout the day."
+      ]
+    },
+    {
+      "prompt": "Have you recently experienced stress, anxiety, or panic attacks?",
+      "patient_responses": [
+        "I've been under a lot of stress and have anxiety issues.",
+        "No, I haven't experienced stress or anxiety recently."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "symptom": "Cold",
+  "symptom_description": "A cold is a viral infection that primarily affects the nose and throat, causing symptoms like a runny or stuffy nose, cough, and sore throat.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing cold symptoms?",
+      "patient_responses": [
+        "I've had cold symptoms for the past three days.",
+        "It's been about a week since I started feeling unwell."
+      ]
+    },
+    {
+      "prompt": "Have you taken any over-the-counter cold remedies or medications?",
+      "patient_responses": [
+        "Yes, I've been using over-the-counter cough syrup and decongestants.",
+        "No, I haven't taken any medication for it yet."
+      ]
+    },
+    {
+      "prompt": "Make sure to get plenty of rest, drink fluids, and consider seeing a healthcare professional if your symptoms worsen.",
+      "patient_responses": [
+        "I'll rest and stay hydrated, thank you.",
+        "I'll keep an eye on my symptoms and seek help if needed."
+      ]
+    },
+    {
+      "prompt": "Do you have a fever along with your cold symptoms?",
+      "patient_responses": [
+        "Yes, I have a low-grade fever as well.",
+        "No, I don't have a fever."
+      ]
+    },
+    {
+      "prompt": "Have you been in close contact with someone who has had similar cold symptoms recently?",
+      "patient_responses": [
+        "Yes, my family members had colds recently.",
+        "No, I haven't been in close contact with anyone with cold symptoms."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of allergies or asthma?",
+      "patient_responses": [
+        "I have seasonal allergies and asthma.",
+        "I don't have any known allergies or asthma."
+      ]
+    },
+    {
+      "prompt": "Have you traveled to areas with significant temperature changes recently?",
+      "patient_responses": [
+        "I traveled from a warm climate to a cold one last week.",
+        "No, I haven't experienced significant temperature changes recently."
+      ]
+    },
+    {
+      "prompt": "Is there any noticeable change in the color or thickness of your mucus or phlegm?",
+      "patient_responses": [
+        "My mucus is green and thick.",
+        "My mucus is clear and not very thick."
+      ]
+    },
+    {
+      "prompt": "Do you have a persistent cough that produces phlegm?",
+      "patient_responses": [
+        "Yes, I have a productive cough with yellow phlegm.",
+        "No, I have a dry cough."
+      ]
+    },
+    {
+      "prompt": "Are your cold symptoms worse in the morning or at night?",
+      "patient_responses": [
+        "My symptoms tend to be worse in the morning.",
+        "My symptoms are worse at night."
+      ]
+    }
+  ]
+}

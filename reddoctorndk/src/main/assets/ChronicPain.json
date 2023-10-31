@@ -1,0 +1,92 @@
+{
+  "symptom": "Chronic Pain",
+  "symptom_description": "Chronic pain is persistent pain that lasts for an extended period, often due to underlying medical conditions, injuries, or diseases.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing chronic pain?",
+      "patient_responses": [
+        "I've been dealing with chronic pain for the past two years.",
+        "It's been a constant issue for more than a decade now.",
+        "This pain has been ongoing for several months."
+      ]
+    },
+    {
+      "prompt": "Have you sought medical treatment or tried any therapies to manage your chronic pain?",
+      "patient_responses": [
+        "I've seen multiple specialists and have tried physical therapy.",
+        "I haven't sought medical treatment for it yet.",
+        "I've been using heat therapy and over-the-counter pain relievers."
+      ]
+    },
+    {
+      "prompt": "It's important to continue working with healthcare professionals to manage your chronic pain effectively.",
+      "patient_responses": [
+        "I'll follow up with my pain management specialist.",
+        "I appreciate your advice and will seek further help.",
+        "I'm not sure if I want to continue treatment."
+      ]
+    },
+    {
+      "prompt": "Can you describe the type of pain you're experiencing and its intensity?",
+      "patient_responses": [
+        "The pain is a sharp, stabbing sensation, and it's excruciating.",
+        "It's a dull, aching pain that's moderate in intensity.",
+        "The pain varies in intensity from day to day."
+      ]
+    },
+    {
+      "prompt": "Have you been diagnosed with any specific conditions or diseases that could be causing your chronic pain?",
+      "patient_responses": [
+        "I have fibromyalgia and osteoarthritis.",
+        "I don't have any specific diagnoses related to the pain.",
+        "I have a history of back injuries."
+      ]
+    },
+    {
+      "prompt": "Do you have a family history of chronic pain or related conditions?",
+      "patient_responses": [
+        "Yes, my mother also had chronic pain issues.",
+        "No, there is no family history of such conditions.",
+        "I'm not sure about my family history."
+      ]
+    },
+    {
+      "prompt": "Has your chronic pain affected your daily activities, work, or sleep?",
+      "patient_responses": [
+        "It has significantly impacted my ability to work and sleep.",
+        "It's had a minimal effect on my daily life and work.",
+        "I've had to make some adjustments, but I can still manage."
+      ]
+    },
+    {
+      "prompt": "Have you tried alternative therapies or complementary medicine, such as acupuncture or chiropractic care?",
+      "patient_responses": [
+        "I've tried acupuncture and found it somewhat helpful.",
+        "I haven't explored alternative therapies yet.",
+        "I see a chiropractor regularly."
+      ]
+    },
+    {
+      "prompt": "Are you currently taking any prescription medications to manage your pain?",
+      "patient_responses": [
+        "I'm on strong opioid medications for pain management.",
+        "I'm not currently taking any prescription medications.",
+        "I take non-opioid medications as prescribed."
+      ]
+    },
+    {
+      "prompt": "Is your chronic pain localized to a specific area or is it widespread throughout your body?",
+      "patient_responses": [
+        "It's localized to my lower back and legs.",
+        "My pain is widespread, affecting multiple areas.",
+        "I have pain in my neck and shoulders."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "symptom": "Chills",
+  "symptom_description": "Chills refer to the feeling of coldness or shivering, often accompanied by a sensation of cold and sometimes fever. They can be caused by various infections, illnesses, or exposure to cold temperatures.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing chills?",
+      "patient_responses": [
+        "I've been having chills for the past 24 hours.",
+        "It's been going on for several days now."
+      ]
+    },
+    {
+      "prompt": "Have you taken any over-the-counter medication to alleviate the chills?",
+      "patient_responses": [
+        "Yes, I took some over-the-counter fever-reducing medication.",
+        "No, I haven't taken any medication for it yet."
+      ]
+    },
+    {
+      "prompt": "Make sure to keep warm, rest, and consider seeing a healthcare professional if your chills persist or worsen.",
+      "patient_responses": [
+        "I'll bundle up and rest in bed.",
+        "I'll monitor my condition and seek medical advice if needed."
+      ]
+    },
+    {
+      "prompt": "Are you experiencing any other symptoms, such as fever, cough, or body aches?",
+      "patient_responses": [
+        "I have a fever and a persistent cough in addition to chills.",
+        "No, I don't have any other symptoms."
+      ]
+    },
+    {
+      "prompt": "Have you been in close contact with someone who has had similar symptoms recently?",
+      "patient_responses": [
+        "Yes, my coworker had chills and fever last week.",
+        "No, I haven't been in close contact with anyone with similar symptoms."
+      ]
+    },
+    {
+      "prompt": "Do you have any underlying health conditions or chronic illnesses?",
+      "patient_responses": [
+        "I have a history of respiratory issues.",
+        "I don't have any known underlying health conditions."
+      ]
+    },
+    {
+      "prompt": "Have you traveled to areas with extreme cold temperatures recently?",
+      "patient_responses": [
+        "I went on a ski trip to a very cold region last week.",
+        "No, I haven't been to such areas recently."
+      ]
+    },
+    {
+      "prompt": "Is your skin visibly cold to the touch, or do you experience any trembling or shivering?",
+      "patient_responses": [
+        "Yes, my skin is cold, and I'm shivering.",
+        "No, my skin feels normal, and I'm not shivering."
+      ]
+    },
+    {
+      "prompt": "Have you recently engaged in activities that may have exposed you to cold or wet conditions?",
+      "patient_responses": [
+        "I was caught in heavy rain last night.",
+        "I haven't been exposed to cold or wet conditions recently."
+      ]
+    },
+    {
+      "prompt": "Is there a specific time of day or night when the chills worsen?",
+      "patient_responses": [
+        "They seem to get worse in the evening and at night.",
+        "My chills are consistent throughout the day."
+      ]
+    }
+  ]
+}

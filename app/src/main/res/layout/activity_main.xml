@@ -6,40 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:fontFamily="@font/lb_regular"
-
-        android:id="@+id/edtKeyword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInput"
+        style="@style/EditTextOutLineStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8sdp"
-        android:hint="What are you experiencing ?"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:text="Diarrhea"
+        android:outlineSpotShadowColor="@color/blue4_dashboard"
+        app:boxCornerRadiusBottomEnd="@dimen/_6sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_6sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_6sdp"
+        app:boxCornerRadiusTopStart="@dimen/_6sdp"
+        app:boxStrokeColor="#192381"
+        app:hintTextColor="#192381"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edtKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@null"
+            android:focusable="false"
+
+            android:fontFamily="sans-serif-black"
+            android:hint="How Are you feeling?"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/btnStartChat"
         android:layout_width="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lb_regular"
         android:text="Start Chat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtKeyword" />
+        app:layout_constraintBottom_toTopOf="@+id/txtInput"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_25sdp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStartChat">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="@dimen/_45sdp"
@@ -55,7 +76,7 @@
             android:lineSpacingMultiplier="1.4"
             android:scrollIndicators="start"
             android:singleLine="false"
-            android:text="Hi, I am RedDoctorNDK How Can I help you?"
+            android:text="Hi, I am AndroidNDK. \nHow Can I help you?"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp" />
 

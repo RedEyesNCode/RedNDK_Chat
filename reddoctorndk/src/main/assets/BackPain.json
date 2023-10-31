@@ -1,0 +1,92 @@
+{
+  "symptom": "Back Pain",
+  "symptom_description": "Back pain can occur in the lower, middle, or upper back and may be caused by various factors, including muscle strain, disc issues, or underlying health conditions.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing back pain?",
+      "patient_responses": [
+        "I've had back pain for the past two weeks.",
+        "It's been a recurring issue for several months now.",
+        "This back pain has been ongoing for a few years."
+      ]
+    },
+    {
+      "prompt": "Have you tried any home remedies or over-the-counter pain relievers for your back pain?",
+      "patient_responses": [
+        "I've used heating pads and over-the-counter pain medication for relief.",
+        "I haven't tried any remedies yet.",
+        "I've been doing some back stretches to alleviate the pain."
+      ]
+    },
+    {
+      "prompt": "It's important to address back pain, especially if it persists or worsens. Consider consulting a healthcare professional.",
+      "patient_responses": [
+        "I'll make an appointment with a doctor to get it checked.",
+        "I appreciate your advice, and I'll consider seeking medical help.",
+        "I'm not sure if I want to see a doctor about it."
+      ]
+    },
+    {
+      "prompt": "Can you describe the type of back pain you're experiencing and its intensity?",
+      "patient_responses": [
+        "The pain is sharp and intense, and it radiates down my legs.",
+        "It's a dull, persistent ache that's moderate in intensity.",
+        "The pain comes and goes, and it's not very intense."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of spinal problems or back injuries?",
+      "patient_responses": [
+        "I've had a herniated disc in the past and a history of back injuries.",
+        "I don't have a history of spinal issues or back injuries.",
+        "I had a minor back injury a few years ago."
+      ]
+    },
+    {
+      "prompt": "Have you had any recent changes in your physical activity or heavy lifting that might have triggered the back pain?",
+      "patient_responses": [
+        "I recently started a new job that involves heavy lifting.",
+        "My physical activity hasn't changed significantly recently.",
+        "I've been doing more intense workouts lately."
+      ]
+    },
+    {
+      "prompt": "Do you have a family history of back problems or spinal conditions?",
+      "patient_responses": [
+        "Yes, my father had a history of back problems.",
+        "No, there is no family history of such conditions.",
+        "I'm not aware of my family's medical history."
+      ]
+    },
+    {
+      "prompt": "Has the back pain affected your ability to perform daily activities, work, or exercise?",
+      "patient_responses": [
+        "It has significantly limited my ability to work and exercise.",
+        "It's had a minor impact on my daily life, but I can manage.",
+        "I've had to make some adjustments but can still perform daily activities."
+      ]
+    },
+    {
+      "prompt": "Do you experience any numbness or tingling sensations in your legs or feet along with the back pain?",
+      "patient_responses": [
+        "Yes, I have numbness and tingling sensations in my legs and feet.",
+        "No, I don't have any numbness or tingling.",
+        "I've had occasional tingling but no numbness."
+      ]
+    },
+    {
+      "prompt": "Are there specific activities or positions that make the back pain worse or better?",
+      "patient_responses": [
+        "Sitting for extended periods worsens the pain, while lying down provides some relief.",
+        "My pain is fairly consistent regardless of activity or position.",
+        "Stretching and walking seem to alleviate the pain temporarily."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

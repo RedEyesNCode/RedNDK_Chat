@@ -1,0 +1,92 @@
+{
+  "symptom": "Tooth Pain",
+  "symptom_description": "Tooth pain can be caused by various dental issues, such as cavities, gum disease, or tooth sensitivity. It's characterized by discomfort or pain in and around the affected tooth.",
+  "doctor_conversations": [
+    {
+      "prompt": "How long have you been experiencing tooth pain?",
+      "patient_responses": [
+        "I've had tooth pain for the past few days.",
+        "It's been bothering me for a couple of weeks now.",
+        "This tooth pain has been ongoing for several months."
+      ]
+    },
+    {
+      "prompt": "Have you tried any home remedies or over-the-counter pain relievers for your tooth pain?",
+      "patient_responses": [
+        "I've used clove oil and over-the-counter pain medication for relief.",
+        "I haven't tried any remedies yet.",
+        "I've been using a cold compress to numb the pain."
+      ]
+    },
+    {
+      "prompt": "Managing tooth pain is crucial. You should consult a dentist if it persists or worsens.",
+      "patient_responses": [
+        "I'll schedule an appointment with my dentist right away.",
+        "I appreciate your advice, and I'll reach out to a dentist if needed.",
+        "I'm not sure if I want to see a dentist about it."
+      ]
+    },
+    {
+      "prompt": "Can you describe the type of tooth pain you're experiencing and its intensity?",
+      "patient_responses": [
+        "The pain is sharp and intense, especially when I eat or drink something hot or cold.",
+        "It's a dull, persistent ache that's moderate in intensity.",
+        "The pain is sporadic, and it's not very intense."
+      ]
+    },
+    {
+      "prompt": "Have you noticed any visible issues with your teeth, such as cavities or gum problems?",
+      "patient_responses": [
+        "I see a visible cavity in one of my teeth, and my gums have been bleeding.",
+        "I don't see any visible issues with my teeth or gums.",
+        "I'm not sure if there are visible problems."
+      ]
+    },
+    {
+      "prompt": "Do you have a history of dental problems or dental procedures?",
+      "patient_responses": [
+        "I've had several fillings and a root canal in the past.",
+        "I don't have a history of dental issues or procedures.",
+        "I had my wisdom teeth removed a few years ago."
+      ]
+    },
+    {
+      "prompt": "Have you had any recent dental cleanings or check-ups?",
+      "patient_responses": [
+        "I had a dental cleaning about six months ago.",
+        "I haven't had a dental check-up in over a year.",
+        "I saw my dentist for a check-up a few weeks ago."
+      ]
+    },
+    {
+      "prompt": "Is the tooth pain triggered by specific actions, such as chewing, drinking, or exposure to hot or cold temperatures?",
+      "patient_responses": [
+        "It's most painful when I chew or consume hot or cold foods.",
+        "The pain is not consistently linked to specific actions or temperatures.",
+        "I haven't noticed any specific triggers."
+      ]
+    },
+    {
+      "prompt": "Have you been consuming acidic foods or drinks, like citrus fruits or soda?",
+      "patient_responses": [
+        "I've been consuming a lot of citrus fruits and soda recently.",
+        "I don't typically consume acidic foods or drinks.",
+        "I occasionally have citrus fruits, but not excessively."
+      ]
+    },
+    {
+      "prompt": "Do you grind your teeth or clench your jaw, especially at night?",
+      "patient_responses": [
+        "I grind my teeth at night and wear a nightguard.",
+        "I don't have a history of teeth grinding or jaw clenching.",
+        "I'm not sure if I grind my teeth."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}

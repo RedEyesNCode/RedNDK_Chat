@@ -1,0 +1,82 @@
+{
+  "symptom": "Fever",
+  "symptom_description": "Fever is an elevated body temperature and can be caused by various infections, inflammatory conditions, or other underlying health issues.",
+  "doctor_conversations": [
+    {
+      "prompt": "How high is your fever, and how long have you had it?",
+      "patient_responses": [
+        "My fever is 101°F, and I've had it for two days.",
+        "It's around 100.5°F, and it's been ongoing for a week now."
+      ]
+    },
+    {
+      "prompt": "Have you taken any over-the-counter fever-reducing medication?",
+      "patient_responses": [
+        "Yes, I've taken ibuprofen to lower my fever.",
+        "No, I haven't taken any medication for it yet."
+      ]
+    },
+    {
+      "prompt": "Make sure to rest and stay hydrated. If the fever persists, consult a healthcare professional.",
+      "patient_responses": [
+        "I'll get plenty of rest and drink fluids.",
+        "I'll consider seeing a doctor if it doesn't improve."
+      ]
+    },
+    {
+      "prompt": "Do you have any other symptoms, such as cough, sore throat, or body aches?",
+      "patient_responses": [
+        "I have a sore throat and body aches along with the fever.",
+        "No, I don't have any other symptoms."
+      ]
+    },
+    {
+      "prompt": "Have you recently traveled to areas with a high risk of infectious diseases?",
+      "patient_responses": [
+        "I traveled to a region with a high incidence of malaria last month.",
+        "No, I haven't traveled to such areas recently."
+      ]
+    },
+    {
+      "prompt": "Do you have any known allergies or underlying health conditions?",
+      "patient_responses": [
+        "I have a known allergy to penicillin.",
+        "I don't have any known allergies or health conditions."
+      ]
+    },
+    {
+      "prompt": "Have you been in close contact with someone who has had a fever or similar symptoms recently?",
+      "patient_responses": [
+        "Yes, my coworker had a fever last week.",
+        "No, I haven't been in close contact with anyone like that."
+      ]
+    },
+    {
+      "prompt": "Is your fever accompanied by night sweats or chills?",
+      "patient_responses": [
+        "Yes, I've had night sweats and chills during this fever.",
+        "No, I haven't experienced night sweats or chills."
+      ]
+    },
+    {
+      "prompt": "Have you taken any recent international flights?",
+      "patient_responses": [
+        "I took an international flight a week ago.",
+        "I haven't traveled internationally recently."
+      ]
+    },
+    {
+      "prompt": "Is your fever higher at a specific time of day or night?",
+      "patient_responses": [
+        "It's usually higher in the evening and night.",
+        "My fever seems to stay constant throughout the day."
+      ]
+    },
+    {
+      "prompt": "ENDED",
+      "patient_responses": [
+        "Please Restart the App !"
+      ]
+    }
+  ]
+}
