@@ -1,2 +1,2 @@
 # RedNDK_Chat
-AI Based SDK Platform in Android NDK to Provide Disease Prediction
+Android NDK Doctor Patient Conversation
